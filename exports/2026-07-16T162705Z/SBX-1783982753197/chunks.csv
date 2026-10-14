@@ -1,0 +1,2 @@
+id,chunk_index,started_at,ended_at,beat_count,byte_size,storage_path,beats_storage_path,checksum,compression,tag_schema_version,uploaded_at,bin_local,beats_local,bin_sha256,checksum_match_uncompressed,status
+SBX-1783982753197-0,0,2026-07-13T22:45:53.472+00:00,2026-07-13T22:46:03.584+00:00,0,1476,Micah/SBX-1783982753197/chunk_00000.bin.zst,,c788db779b1347f98edb1a7676b199b433b3ba2b6cd99e467d2c84346524a102,zstd,2,2026-07-13T22:46:04.643035+00:00,chunks\chunk_00000.bin.zst,,c16d4390e552d3032216a27215fe7ce771bcd79e1dec2d702a75fee3ce21886f,False,ok

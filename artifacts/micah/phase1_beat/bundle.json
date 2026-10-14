@@ -1,0 +1,33 @@
+{
+  "artifact_version": "1.0",
+  "subject_id": "Micah",
+  "generated_at": "2026-07-17T10:42:20.953351+00:00",
+  "config_path": "configs\\phase1_beat_micah_rest.yaml",
+  "metrics": {
+    "train_windows": 5000,
+    "eval_windows": 2000,
+    "fit_windows": 4000,
+    "val_windows": 1000,
+    "train_error_mean": 0.5093125104904175,
+    "train_error_p95": 0.9843432903289795,
+    "val_error_mean": 0.5187110304832458,
+    "eval_error_mean": 0.5195116996765137,
+    "eval_error_p95": 0.9836936593055725,
+    "alert_threshold": 0.9973371028900146,
+    "alert_percentile": 99.0,
+    "eval_false_alert_rate": 0.0175,
+    "final_train_loss": 0.5083727156743407,
+    "threshold_method": "val_p99",
+    "eval_sustained_false_alert_rate": 0.0
+  },
+  "model": {
+    "input_length": 500,
+    "latent_dim": 32,
+    "checkpoint_file": "personal_ae.pt"
+  },
+  "persistence": {
+    "smoothing_window": 5,
+    "consecutive_beats": 3
+  },
+  "activity_segment": "rest"
+}

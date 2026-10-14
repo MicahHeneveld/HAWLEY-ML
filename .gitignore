@@ -1,0 +1,27 @@
+# ---------------------------------------------------------------------------
+# See docs/NOT_IN_GIT.md for the full inventory of intentionally-untracked files
+# and the exact command / download needed to restore each one.
+# Rule of thumb: nothing over ~100 MB can be pushed (git host hard limit).
+# ---------------------------------------------------------------------------
+
+# Local secrets (credentials, tokens)
+.env
+
+# Trained model weights (regenerate via personal_baseline_phase1)
+artifacts/**/*.pt
+
+# ECGFounder base weights — ~361 MB, above the 100 MB host limit.
+# Restore: download from https://huggingface.co/PKUDigitalHealth/ECGFounder
+#          and place at checkpoint/1_lead_ECGFounder.pth
+checkpoint/*.pth
+
+# Offboard bundle copy of the diagnosis head — ~123 MB, above the host limit.
+# Restore: python -m training.build_offboard_bundle
+# (personal_ae.pt in the bundle is small and IS tracked — do not ignore it.)
+offboard/portable_bundle/artifacts/diagnosis_narrow/*.pt
+
+# Processed training shards
+processed/**/*.npz
+
+# AWS offboard mirrors (large; keep local only)
+offboard/aws_mirror/

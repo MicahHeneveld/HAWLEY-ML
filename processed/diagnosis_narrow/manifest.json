@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-07-17T15:09:11.582992+00:00",
+  "export_dir": "exports\\2026-07-16T162705Z",
+  "total_windows": 3597,
+  "train_size": 2877,
+  "eval_size": 720,
+  "label_balance": {
+    "alert": 1993,
+    "normal": 1604
+  },
+  "label_note": "Weak proxy labels from Sandbox tags (resting_hr vs elevated_hr/cognitive_stress/arousal_spike). NOT clinical pathology \u2014 gates fusion integration until real labels exist.\n"
+}

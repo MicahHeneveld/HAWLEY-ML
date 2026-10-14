@@ -1,0 +1,42 @@
+export_dir: exports/2026-07-16T162705Z
+subject_id: Micah
+output_dir: reports/phase1_personal
+
+train_recording_fraction: 0.7
+
+window_seconds: 10
+window_stride_seconds: 10
+polar_sample_rate_hz: 130
+target_sample_rate_hz: 500
+
+# Stricter rest QC — exclude phone motion, require 80% sedentary beats
+require_tags:
+  layer_a: sedentary_stationary
+  layer_c_include: null
+  layer_c_exclude:
+    - motion_artifact
+    - poor_contact
+    - baseline_wander
+  layer_a_exclude:
+    - walking
+    - running
+    - cycling
+  min_layer_a_fraction: 0.75
+
+max_train_windows: 3000
+max_eval_windows: 1000
+random_seed: 42
+
+# Tuned personal autoencoder
+ae_latent_dim: 128
+ae_epochs: 30
+ae_batch_size: 64
+ae_learning_rate: 0.0005
+ae_alert_percentile: 99
+
+ecgfounder_checkpoint_dir: checkpoint
+ecgfounder_threshold: 0.5
+skip_ecgfounder: true
+normal_label_keywords:
+  - NORMAL
+  - SINUS

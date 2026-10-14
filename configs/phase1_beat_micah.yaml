@@ -1,0 +1,49 @@
+export_dir: exports/2026-07-16T162705Z
+subject_id: Micah
+activity_segment: rest
+output_dir: reports/phase1_beat
+
+# Window-level split (same subject — literature personalizes per beat morphology)
+split_method: window_random
+train_window_fraction: 0.8
+random_seed: 42
+
+# Beat-aligned 1 s @ 500 Hz (wearable anomaly detection standard)
+window_mode: beat
+window_seconds: 1
+polar_sample_rate_hz: 130
+target_sample_rate_hz: 500
+
+require_tags:
+  layer_a: sedentary_stationary
+  layer_c_include: null
+  layer_c_exclude:
+    - motion_artifact
+    - poor_contact
+    - baseline_wander
+  layer_a_exclude:
+    - walking
+    - running
+    - cycling
+
+max_train_windows: 5000
+max_eval_windows: 2000
+
+# Personal autoencoder on 500-sample beats
+ae_latent_dim: 32
+ae_epochs: 20
+ae_batch_size: 128
+ae_learning_rate: 0.001
+ae_alert_percentile: 99
+threshold_method: val_p99
+threshold_val_fraction: 0.2
+
+# Alert persistence (batch scoring + sustained false-alert metric)
+alert_smoothing_window: 5
+alert_consecutive_beats: 3
+
+artifact_dir: artifacts/micah/phase1_beat
+
+skip_ecgfounder: true
+ecgfounder_checkpoint_dir: checkpoint
+ecgfounder_threshold: 0.5

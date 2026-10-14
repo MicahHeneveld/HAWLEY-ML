@@ -1,0 +1,27 @@
+export_dir: exports/2026-07-16T162705Z
+processed_dir: processed/diagnosis_narrow
+artifact_dir: artifacts/micah/diagnosis_narrow
+
+window_seconds: 10
+window_stride_seconds: 10
+target_sample_rate_hz: 500
+max_windows: 6000
+train_fraction: 0.8
+random_seed: 42
+
+ecgfounder_base_checkpoint: checkpoint
+
+epochs: 8
+batch_size: 32
+learning_rate: 0.0005
+linear_probe: true
+suspicious_threshold: 0.5
+
+label_note: >
+  Weak proxy labels from Sandbox tags (resting_hr vs elevated_hr/cognitive_stress/arousal_spike).
+  NOT clinical pathology — gates fusion integration until real labels exist.
+
+sagemaker:
+  instance_type: ml.g4dn.xlarge
+  volume_gb: 50
+  max_run_seconds: 3600

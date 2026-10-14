@@ -1,0 +1,1 @@
+id,chunk_index,started_at,ended_at,beat_count,byte_size,storage_path,beats_storage_path,checksum,compression,tag_schema_version,uploaded_at,bin_local,beats_local,bin_sha256,checksum_match_uncompressed,status

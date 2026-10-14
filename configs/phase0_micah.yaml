@@ -1,0 +1,40 @@
+export_dir: exports/2026-07-16T162705Z
+subject_id: Micah
+output_dir: reports/phase0
+
+# Temporal split: first 70% of recordings by start time → train, rest → eval
+train_recording_fraction: 0.7
+
+# Window extraction (ECGFounder expects 10 s @ 500 Hz)
+window_seconds: 10
+window_stride_seconds: 10
+polar_sample_rate_hz: 130
+target_sample_rate_hz: 500
+
+# QC: clean rest windows for personal baseline + diagnosis gate test
+require_tags:
+  layer_a: sedentary_stationary
+  layer_c_include: null
+  layer_c_exclude:
+    - motion_artifact
+    - poor_contact
+    - baseline_wander
+
+# Caps for local Phase 0 runs (full corpus has ~45k+ candidate windows)
+max_train_windows: 3000
+max_eval_windows: 1000
+random_seed: 42
+
+# Personal autoencoder
+ae_latent_dim: 64
+ae_epochs: 15
+ae_batch_size: 64
+ae_learning_rate: 0.001
+ae_alert_percentile: 99
+
+# ECGFounder diagnosis gate (optional — requires checkpoint/)
+ecgfounder_checkpoint_dir: checkpoint
+ecgfounder_threshold: 0.5
+normal_label_keywords:
+  - NORMAL
+  - SINUS

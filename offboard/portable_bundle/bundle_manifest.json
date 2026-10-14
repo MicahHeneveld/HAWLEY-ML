@@ -1,0 +1,9 @@
+{
+  "generated_at": "2026-07-17T12:45:19.578086+00:00",
+  "artifacts_root": "C:\\HAWLEY-ML\\artifacts\\micah",
+  "artifact_dirs": [
+    "diagnosis_narrow\\bundle.json",
+    "phase1_beat\\bundle.json",
+    "phase1_beat_resting_hr\\bundle.json"
+  ]
+}

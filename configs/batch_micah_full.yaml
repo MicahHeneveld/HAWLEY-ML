@@ -1,0 +1,13 @@
+export_dir: exports/2026-07-16T162705Z
+output_dir: reports/batch_micah_full
+
+layer_c_exclude:
+  - motion_artifact
+  - poor_contact
+  - baseline_wander
+
+segment_artifacts:
+  rest: artifacts/micah/phase1_beat
+  resting_hr: artifacts/micah/phase1_beat_resting_hr
+
+diagnosis_artifact_dir: artifacts/micah/diagnosis_narrow_sagemaker

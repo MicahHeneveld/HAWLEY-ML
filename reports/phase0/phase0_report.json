@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-07-17T08:40:02.141335+00:00",
+  "export_dir": "exports\\2026-07-16T162705Z",
+  "recordings_total": 31,
+  "recordings_train": 21,
+  "recordings_eval": 10,
+  "clean_rest_windows_train": 3000,
+  "clean_rest_windows_eval": 1000,
+  "personal_autoencoder": {
+    "train_windows": 3000,
+    "eval_windows": 1000,
+    "train_error_mean": 0.963678240776062,
+    "train_error_p95": 0.9994374513626099,
+    "eval_error_mean": 0.9736137986183167,
+    "eval_error_p95": 1.0194039344787598,
+    "alert_threshold": 1.0111589431762695,
+    "alert_percentile": 99.0,
+    "eval_false_alert_rate": 0.067,
+    "final_train_loss": 0.9646056383214099
+  },
+  "ecgfounder": {
+    "status": "ran",
+    "eval_windows": 1000,
+    "threshold": 0.5,
+    "weight_file": "checkpoint\\1_lead_ECGFounder.pth",
+    "normal_label_count": 23,
+    "normal_strength_mean": 4.619636058807373,
+    "pathology_strength_mean": 0.7901096343994141,
+    "pathology_strength_p95": 0.9399489760398865,
+    "suspicious_rate": 0.995,
+    "top_predicted_labels": {
+      "ABNORMAL ECG": 650,
+      "SINUS RHYTHM": 336,
+      "NORMAL SINUS RHYTHM": 14
+    },
+    "note": "Suspicious = max pathology-class probability >= threshold on clean rest windows.",
+    "normal_label_keywords": [
+      "NORMAL",
+      "SINUS"
+    ]
+  },
+  "go_no_go": {
+    "personal_baseline_pass": false,
+    "ecgfounder_pass": false,
+    "overall_phase0_pass": false,
+    "notes": {
+      "personal": "Target eval false alert rate < 5% at 99th percentile threshold.",
+      "ecgfounder": "Diagnosis gate interim proxy suspicious_rate should be < 10% on clean rest."
+    }
+  }
+}

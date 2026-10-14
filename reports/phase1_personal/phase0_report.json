@@ -1,0 +1,34 @@
+{
+  "generated_at": "2026-07-17T08:55:08.180212+00:00",
+  "export_dir": "exports\\2026-07-16T162705Z",
+  "recordings_total": 31,
+  "recordings_train": 21,
+  "recordings_eval": 10,
+  "clean_rest_windows_train": 3000,
+  "clean_rest_windows_eval": 1000,
+  "personal_autoencoder": {
+    "train_windows": 3000,
+    "eval_windows": 1000,
+    "train_error_mean": 0.9544181227684021,
+    "train_error_p95": 0.9987257719039917,
+    "eval_error_mean": 0.9678719639778137,
+    "eval_error_p95": 1.0160346031188965,
+    "alert_threshold": 1.0074034929275513,
+    "alert_percentile": 99.0,
+    "eval_false_alert_rate": 0.07,
+    "final_train_loss": 0.955657147346659
+  },
+  "ecgfounder": {
+    "status": "skipped",
+    "reason": "config or --skip-ecgfounder"
+  },
+  "go_no_go": {
+    "personal_baseline_pass": false,
+    "ecgfounder_pass": null,
+    "overall_phase0_pass": false,
+    "notes": {
+      "personal": "Target eval false alert rate < 5% at 99th percentile threshold.",
+      "ecgfounder": "ECGFounder not run \u2014 download checkpoint to complete diagnosis gate."
+    }
+  }
+}

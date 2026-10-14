@@ -1,0 +1,31 @@
+Loaded diagnosis narrow head from artifacts\micah\diagnosis_narrow_sagemaker
+Scanning signal-clean beats (all activities)...
+Routable beats: 331317 / 337161 total signal-clean
+{
+  "generated_at": "2026-07-18T16:53:39.481865+00:00",
+  "export_dir": "C:\\HAWLEY-ML\\exports\\2026-07-16T162705Z",
+  "segment_artifacts": {
+    "rest": "artifacts/micah/phase1_beat",
+    "resting_hr": "artifacts/micah/phase1_beat_resting_hr"
+  },
+  "total_beats_scored": 331317,
+  "recordings_scored": 5,
+  "sustained_alert_beats": 0,
+  "tier_counts": {
+    "stable": 263567,
+    "suspicious": 63043,
+    "personal_anomaly": 3689,
+    "critical": 1018
+  },
+  "segment_counts": {
+    "rest": 271439,
+    "resting_hr": 59878
+  },
+  "diagnosis_artifact": "artifacts\\micah\\diagnosis_narrow_sagemaker",
+  "tier_counts_with_diagnosis": {
+    "stable": 263567,
+    "suspicious": 63043,
+    "personal_anomaly": 3689,
+    "critical": 1018
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-07-17T09:49:58.768067+00:00",
+  "export_dir": "C:\\HAWLEY-ML\\exports\\2026-07-16T162705Z",
+  "artifact_dir": "C:\\HAWLEY-ML\\artifacts\\micah\\phase1_beat",
+  "total_beats_scored": 2000,
+  "recordings_scored": 4,
+  "alert_threshold": 0.9973371028900146,
+  "smoothing_window": 5,
+  "consecutive_beats": 3,
+  "sustained_alert_beats": 0,
+  "tier_counts": {
+    "stable": 1972,
+    "personal_anomaly": 28
+  }
+}

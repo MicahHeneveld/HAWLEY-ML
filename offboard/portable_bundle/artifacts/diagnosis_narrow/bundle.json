@@ -1,0 +1,37 @@
+{
+  "artifact_version": "1.0",
+  "model_type": "ecgfounder_narrow",
+  "generated_at": "2026-07-17T11:34:06.963621+00:00",
+  "n_classes": 2,
+  "class_names": [
+    "normal_proxy",
+    "context_alert_proxy"
+  ],
+  "suspicious_class_index": 1,
+  "checkpoint_file": "diagnosis_narrow.pt",
+  "base_checkpoint": "C:\\HAWLEY-ML\\checkpoint\\1_lead_ECGFounder.pth",
+  "threshold": 0.725,
+  "metrics": {
+    "eval_accuracy": 0.7013888888888888,
+    "eval_false_suspicious_on_normal": 0.33650793650793653,
+    "eval_alert_recall_proxy": 0.7308641975308642,
+    "final_train_loss": 0.530603739950392,
+    "train_size": 2877,
+    "eval_size": 720
+  },
+  "label_note": "Weak proxy labels from Sandbox tags (resting_hr vs elevated_hr/cognitive_stress/arousal_spike). NOT clinical pathology \u2014 gates fusion integration until real labels exist.\n",
+  "threshold_default_0.5": {
+    "threshold": 0.5,
+    "false_suspicious_on_normal": 0.33650793650793653,
+    "alert_recall_proxy": 0.7308641975308642
+  },
+  "threshold_calibration": {
+    "max_false_suspicious_target": 0.1,
+    "chosen": {
+      "threshold": 0.725,
+      "false_suspicious_on_normal": 0.09523809523809523,
+      "alert_recall_proxy": 0.45925925925925926
+    },
+    "eval_size": 720
+  }
+}

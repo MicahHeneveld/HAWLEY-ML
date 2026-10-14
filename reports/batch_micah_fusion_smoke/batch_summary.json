@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-07-17T11:56:14.574508+00:00",
+  "export_dir": "C:\\HAWLEY-ML\\exports\\2026-07-16T162705Z",
+  "segment_artifacts": {
+    "rest": "artifacts/micah/phase1_beat",
+    "resting_hr": "artifacts/micah/phase1_beat_resting_hr"
+  },
+  "total_beats_scored": 400,
+  "recordings_scored": 3,
+  "sustained_alert_beats": 0,
+  "tier_counts": {
+    "suspicious": 268,
+    "stable": 129,
+    "personal_anomaly": 3
+  },
+  "segment_counts": {
+    "rest": 334,
+    "resting_hr": 66
+  },
+  "diagnosis_artifact": "artifacts\\micah\\diagnosis_narrow",
+  "tier_counts_with_diagnosis": {
+    "suspicious": 268,
+    "stable": 129,
+    "personal_anomaly": 3
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "artifact_version": "1.0",
+  "model_type": "ecgfounder_narrow",
+  "generated_at": "2026-07-17T15:23:45.595343+00:00",
+  "n_classes": 2,
+  "suspicious_class_index": 1,
+  "checkpoint_file": "diagnosis_narrow.pt",
+  "base_checkpoint": "1_lead_ECGFounder.pth",
+  "threshold": 0.75,
+  "metrics": {
+    "eval_accuracy": 0.7055555555555556,
+    "eval_false_suspicious_on_normal": 0.35555555555555557,
+    "eval_alert_recall_proxy": 0.7530864197530864,
+    "device": "cpu"
+  },
+  "trained_on": "sagemaker_gpu",
+  "sagemaker_job": "hawley-dx-1784301182",
+  "threshold_default_0.5": {
+    "threshold": 0.725,
+    "false_suspicious_on_normal": 0.10158730158730159,
+    "alert_recall_proxy": 0.47901234567901235
+  },
+  "threshold_calibration": {
+    "max_false_suspicious_target": 0.1,
+    "chosen": {
+      "threshold": 0.75,
+      "false_suspicious_on_normal": 0.06984126984126984,
+      "alert_recall_proxy": 0.4345679012345679
+    },
+    "eval_size": 720
+  }
+}

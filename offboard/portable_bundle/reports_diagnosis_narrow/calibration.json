@@ -1,0 +1,13 @@
+{
+  "artifact_dir": "artifacts\\micah\\diagnosis_narrow",
+  "default_at_0.5": {
+    "threshold": 0.5,
+    "false_suspicious_on_normal": 0.33650793650793653,
+    "alert_recall_proxy": 0.7308641975308642
+  },
+  "calibrated": {
+    "threshold": 0.725,
+    "false_suspicious_on_normal": 0.09523809523809523,
+    "alert_recall_proxy": 0.45925925925925926
+  }
+}

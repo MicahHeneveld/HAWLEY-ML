@@ -1,0 +1,13 @@
+numpy>=1.26
+scipy>=1.11
+pandas>=2.1
+pyyaml>=6.0
+zstandard>=0.22
+torch>=2.1
+tqdm>=4.66
+matplotlib>=3.8
+
+# Optional — ECGFounder zero-shot (download weights to ./checkpoint)
+# huggingface_hub>=0.20
+# Optional — only if re-downloading raw data from Supabase or a future cloud
+# boto3>=1.34

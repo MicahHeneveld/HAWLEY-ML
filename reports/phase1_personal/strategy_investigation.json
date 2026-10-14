@@ -1,0 +1,71 @@
+{
+  "generated_at": "2026-07-17T09:09:03.363231+00:00",
+  "config": "configs\\phase1_personal_micah.yaml",
+  "strategies": [
+    {
+      "name": "temporal_split_train_threshold",
+      "split_method": "temporal",
+      "threshold_method": "train_p99",
+      "train_windows": 3000,
+      "eval_windows": 1000,
+      "eval_false_alert_rate": 0.07,
+      "alert_threshold": 1.0074034929275513,
+      "eval_error_mean": 0.9678719639778137,
+      "eval_error_p95": 1.0160346031188965,
+      "notes": "Chronological split \u2014 sensitive to drift over weeks of wear."
+    },
+    {
+      "name": "random_split_train_threshold",
+      "split_method": "random",
+      "threshold_method": "train_p99",
+      "train_windows": 0,
+      "eval_windows": 0,
+      "eval_false_alert_rate": 1.0,
+      "alert_threshold": 0.0,
+      "eval_error_mean": 0.0,
+      "eval_error_p95": 0.0,
+      "notes": "No QC windows found"
+    },
+    {
+      "name": "random_split_val_threshold",
+      "split_method": "random",
+      "threshold_method": "val_p99",
+      "train_windows": 0,
+      "eval_windows": 0,
+      "eval_false_alert_rate": 1.0,
+      "alert_threshold": 0.0,
+      "eval_error_mean": 0.0,
+      "eval_error_p95": 0.0,
+      "notes": "No QC windows found"
+    }
+  ],
+  "best_strategy": {
+    "name": "temporal_split_train_threshold",
+    "split_method": "temporal",
+    "threshold_method": "train_p99",
+    "train_windows": 3000,
+    "eval_windows": 1000,
+    "eval_false_alert_rate": 0.07,
+    "alert_threshold": 1.0074034929275513,
+    "eval_error_mean": 0.9678719639778137,
+    "eval_error_p95": 1.0160346031188965,
+    "notes": "Chronological split \u2014 sensitive to drift over weeks of wear."
+  },
+  "recommendation": {
+    "primary_path": "personal_baseline",
+    "defer": [
+      "ecgfounder_zero_shot",
+      "aws_sagemaker_finetune",
+      "s3_upload"
+    ],
+    "winning_strategy": "temporal_split_train_threshold",
+    "winning_false_alert_rate": 0.07,
+    "rationale": [
+      "ECGFounder zero-shot failed (99.5% suspicious) \u2014 fine-tune only after personal loop works.",
+      "Literature: personalized AE + subject calibration beats population models on wearables.",
+      "Temporal split false alert 7.0% vs random+val threshold 100.0%.",
+      "AWS S3/SageMaker deferred until personal baseline passes <5% locally."
+    ],
+    "next_implementation": "Adopt random recording split + validation-set threshold calibration as default in Phase 1 personal baseline pipeline."
+  }
+}

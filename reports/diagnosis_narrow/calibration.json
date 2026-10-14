@@ -1,0 +1,13 @@
+{
+  "artifact_dir": "artifacts\\micah\\diagnosis_narrow_sagemaker",
+  "default_at_0.5": {
+    "threshold": 0.725,
+    "false_suspicious_on_normal": 0.10158730158730159,
+    "alert_recall_proxy": 0.47901234567901235
+  },
+  "calibrated": {
+    "threshold": 0.75,
+    "false_suspicious_on_normal": 0.06984126984126984,
+    "alert_recall_proxy": 0.4345679012345679
+  }
+}

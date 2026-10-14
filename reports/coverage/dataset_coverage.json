@@ -1,0 +1,368 @@
+{
+  "generated_at": "2026-07-17T11:16:19.831918+00:00",
+  "export_dir": "C:\\HAWLEY-ML\\exports\\2026-07-16T162705Z",
+  "totals": {
+    "beats": 1420606,
+    "signal_clean": 342914,
+    "routable": 336971,
+    "recordings_with_routable": 5
+  },
+  "layer_c_reject_tags": [
+    "baseline_wander",
+    "motion_artifact",
+    "poor_contact"
+  ],
+  "recordings": [
+    {
+      "recording_id": "SBX-1783388659262",
+      "chunk_count": 0,
+      "beat_count": 0,
+      "signal_clean_beats": 0,
+      "routable_beats": 0,
+      "dominant_layer_a": null,
+      "veto_counts": {}
+    },
+    {
+      "recording_id": "SBX-1783388816779",
+      "chunk_count": 0,
+      "beat_count": 0,
+      "signal_clean_beats": 0,
+      "routable_beats": 0,
+      "dominant_layer_a": null,
+      "veto_counts": {}
+    },
+    {
+      "recording_id": "SBX-1783388819219",
+      "chunk_count": 0,
+      "beat_count": 0,
+      "signal_clean_beats": 0,
+      "routable_beats": 0,
+      "dominant_layer_a": null,
+      "veto_counts": {}
+    },
+    {
+      "recording_id": "SBX-1783388864781",
+      "chunk_count": 2,
+      "beat_count": 279,
+      "signal_clean_beats": 279,
+      "routable_beats": 279,
+      "dominant_layer_a": "sedentary",
+      "veto_counts": {}
+    },
+    {
+      "recording_id": "SBX-1783390005242",
+      "chunk_count": 100,
+      "beat_count": 16724,
+      "signal_clean_beats": 0,
+      "routable_beats": 0,
+      "dominant_layer_a": "sedentary",
+      "veto_counts": {
+        "motion_artifact": 16568,
+        "poor_contact": 156
+      }
+    },
+    {
+      "recording_id": "SBX-1783396588394",
+      "chunk_count": 3,
+      "beat_count": 442,
+      "signal_clean_beats": 442,
+      "routable_beats": 442,
+      "dominant_layer_a": "sedentary",
+      "veto_counts": {}
+    },
+    {
+      "recording_id": "SBX-1783397129660",
+      "chunk_count": 10,
+      "beat_count": 1571,
+      "signal_clean_beats": 0,
+      "routable_beats": 0,
+      "dominant_layer_a": "sedentary",
+      "veto_counts": {
+        "motion_artifact": 1542,
+        "poor_contact": 29
+      }
+    },
+    {
+      "recording_id": "SBX-1783397765952",
+      "chunk_count": 12,
+      "beat_count": 2083,
+      "signal_clean_beats": 0,
+      "routable_beats": 0,
+      "dominant_layer_a": "sedentary",
+      "veto_counts": {
+        "motion_artifact": 2048,
+        "poor_contact": 35
+      }
+    },
+    {
+      "recording_id": "SBX-1783398870626",
+      "chunk_count": 492,
+      "beat_count": 78585,
+      "signal_clean_beats": 0,
+      "routable_beats": 0,
+      "dominant_layer_a": "sedentary",
+      "veto_counts": {
+        "motion_artifact": 76270,
+        "poor_contact": 2315
+      }
+    },
+    {
+      "recording_id": "SBX-1783452486558",
+      "chunk_count": 55,
+      "beat_count": 9329,
+      "signal_clean_beats": 0,
+      "routable_beats": 0,
+      "dominant_layer_a": "sedentary",
+      "veto_counts": {
+        "motion_artifact": 9052,
+        "poor_contact": 277
+      }
+    },
+    {
+      "recording_id": "SBX-1783455811265",
+      "chunk_count": 82,
+      "beat_count": 14041,
+      "signal_clean_beats": 0,
+      "routable_beats": 0,
+      "dominant_layer_a": "sedentary",
+      "veto_counts": {
+        "motion_artifact": 13895,
+        "poor_contact": 146
+      }
+    },
+    {
+      "recording_id": "SBX-1783465199493",
+      "chunk_count": 971,
+      "beat_count": 148191,
+      "signal_clean_beats": 0,
+      "routable_beats": 0,
+      "dominant_layer_a": "sedentary",
+      "veto_counts": {
+        "motion_artifact": 146128,
+        "poor_contact": 2063
+      }
+    },
+    {
+      "recording_id": "SBX-1783526750041",
+      "chunk_count": 428,
+      "beat_count": 66944,
+      "signal_clean_beats": 54329,
+      "routable_beats": 54329,
+      "dominant_layer_a": "sedentary",
+      "veto_counts": {
+        "poor_contact": 1042,
+        "baseline_wander": 11573
+      }
+    },
+    {
+      "recording_id": "SBX-1783554089624",
+      "chunk_count": 185,
+      "beat_count": 29528,
+      "signal_clean_beats": 0,
+      "routable_beats": 0,
+      "dominant_layer_a": "sedentary",
+      "veto_counts": {
+        "motion_artifact": 29152,
+        "poor_contact": 376
+      }
+    },
+    {
+      "recording_id": "SBX-1783565162233",
+      "chunk_count": 769,
+      "beat_count": 102285,
+      "signal_clean_beats": 0,
+      "routable_beats": 0,
+      "dominant_layer_a": "sedentary",
+      "veto_counts": {
+        "motion_artifact": 100032,
+        "poor_contact": 2253
+      }
+    },
+    {
+      "recording_id": "SBX-1783615111746",
+      "chunk_count": 1134,
+      "beat_count": 176929,
+      "signal_clean_beats": 165327,
+      "routable_beats": 159384,
+      "dominant_layer_a": "sedentary",
+      "veto_counts": {
+        "poor_contact": 992,
+        "baseline_wander": 10610
+      }
+    },
+    {
+      "recording_id": "SBX-1783686123810",
+      "chunk_count": 0,
+      "beat_count": 0,
+      "signal_clean_beats": 0,
+      "routable_beats": 0,
+      "dominant_layer_a": null,
+      "veto_counts": {}
+    },
+    {
+      "recording_id": "SBX-1783789040682",
+      "chunk_count": 113,
+      "beat_count": 19845,
+      "signal_clean_beats": 0,
+      "routable_beats": 0,
+      "dominant_layer_a": "sedentary",
+      "veto_counts": {
+        "motion_artifact": 19568,
+        "poor_contact": 277
+      }
+    },
+    {
+      "recording_id": "SBX-1783795715228",
+      "chunk_count": 30,
+      "beat_count": 4610,
+      "signal_clean_beats": 0,
+      "routable_beats": 0,
+      "dominant_layer_a": "sedentary",
+      "veto_counts": {
+        "motion_artifact": 4595,
+        "poor_contact": 15
+      }
+    },
+    {
+      "recording_id": "SBX-1783797848647",
+      "chunk_count": 539,
+      "beat_count": 90121,
+      "signal_clean_beats": 0,
+      "routable_beats": 0,
+      "dominant_layer_a": "sedentary",
+      "veto_counts": {
+        "motion_artifact": 89963,
+        "poor_contact": 158
+      }
+    },
+    {
+      "recording_id": "SBX-1783833235981",
+      "chunk_count": 796,
+      "beat_count": 118406,
+      "signal_clean_beats": 0,
+      "routable_beats": 0,
+      "dominant_layer_a": "sedentary",
+      "veto_counts": {
+        "motion_artifact": 115731,
+        "poor_contact": 2675
+      }
+    },
+    {
+      "recording_id": "SBX-1783885868982",
+      "chunk_count": 477,
+      "beat_count": 85007,
+      "signal_clean_beats": 0,
+      "routable_beats": 0,
+      "dominant_layer_a": "sedentary",
+      "veto_counts": {
+        "motion_artifact": 84711,
+        "poor_contact": 296
+      }
+    },
+    {
+      "recording_id": "SBX-1783926162025",
+      "chunk_count": 923,
+      "beat_count": 141582,
+      "signal_clean_beats": 122537,
+      "routable_beats": 122537,
+      "dominant_layer_a": "sedentary",
+      "veto_counts": {
+        "poor_contact": 2016,
+        "baseline_wander": 16205,
+        "motion_artifact": 824
+      }
+    },
+    {
+      "recording_id": "SBX-1783982753197",
+      "chunk_count": 1,
+      "beat_count": 0,
+      "signal_clean_beats": 0,
+      "routable_beats": 0,
+      "dominant_layer_a": null,
+      "veto_counts": {}
+    },
+    {
+      "recording_id": "SBX-1783982778616",
+      "chunk_count": 0,
+      "beat_count": 0,
+      "signal_clean_beats": 0,
+      "routable_beats": 0,
+      "dominant_layer_a": null,
+      "veto_counts": {}
+    },
+    {
+      "recording_id": "SBX-1783983842925",
+      "chunk_count": 334,
+      "beat_count": 58362,
+      "signal_clean_beats": 0,
+      "routable_beats": 0,
+      "dominant_layer_a": "sedentary",
+      "veto_counts": {
+        "motion_artifact": 57950,
+        "poor_contact": 412
+      }
+    },
+    {
+      "recording_id": "SBX-1784005118420",
+      "chunk_count": 0,
+      "beat_count": 0,
+      "signal_clean_beats": 0,
+      "routable_beats": 0,
+      "dominant_layer_a": null,
+      "veto_counts": {}
+    },
+    {
+      "recording_id": "SBX-1784006795382",
+      "chunk_count": 101,
+      "beat_count": 15535,
+      "signal_clean_beats": 0,
+      "routable_beats": 0,
+      "dominant_layer_a": "sedentary",
+      "veto_counts": {
+        "motion_artifact": 15401,
+        "poor_contact": 134
+      }
+    },
+    {
+      "recording_id": "SBX-1784016114523",
+      "chunk_count": 54,
+      "beat_count": 7412,
+      "signal_clean_beats": 0,
+      "routable_beats": 0,
+      "dominant_layer_a": "sedentary",
+      "veto_counts": {
+        "motion_artifact": 7133,
+        "poor_contact": 279
+      }
+    },
+    {
+      "recording_id": "SBX-1784033534911",
+      "chunk_count": 443,
+      "beat_count": 74796,
+      "signal_clean_beats": 0,
+      "routable_beats": 0,
+      "dominant_layer_a": "sedentary",
+      "veto_counts": {
+        "motion_artifact": 74157,
+        "poor_contact": 639
+      }
+    },
+    {
+      "recording_id": "SBX-1784069667979",
+      "chunk_count": 985,
+      "beat_count": 157999,
+      "signal_clean_beats": 0,
+      "routable_beats": 0,
+      "dominant_layer_a": "sedentary",
+      "veto_counts": {
+        "motion_artifact": 156188,
+        "poor_contact": 1811
+      }
+    }
+  ],
+  "notes": [
+    "Routable = passes Layer C QC and maps to rest/resting_hr/walk/cycling segment.",
+    "Many exports use stationary_activity; sedentary QC still requires clean Layer C.",
+    "Recordings with motion_artifact on all beats contribute 0 routable beats."
+  ]
+}

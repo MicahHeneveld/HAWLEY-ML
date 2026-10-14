@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-07-17T12:45:19.599398+00:00",
+  "local_steps_done": [
+    "calibrate_diagnosis",
+    "build_offboard_bundle"
+  ],
+  "aws_steps_when_creds_available": [
+    "python -m datasets.sync_to_s3 --target all --incremental",
+    "python -m training.aws_offboard --output-dir offboard/aws_mirror"
+  ],
+  "artifacts_expected": [
+    "artifacts/micah/phase1_beat",
+    "artifacts/micah/phase1_beat_resting_hr",
+    "artifacts/micah/diagnosis_narrow"
+  ],
+  "portable_bundle": "C:\\HAWLEY-ML\\offboard\\portable_bundle"
+}
